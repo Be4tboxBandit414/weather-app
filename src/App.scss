@@ -1,54 +1,67 @@
 .App {
   text-align: center;
-  .location-container {
-    padding-bottom: 30px;
-    .city {
-      display: inline;
-      font-size: 45px;
-      font-weight: 200;
+  .app-container {
+    width: 60rem;
+    margin-left: 26%;
+    margin-top: 3%;
+    .location-container {
+      padding-bottom: 55px;
+      .city {
+        display: inline;
+        font-size: 60px;
+        font-weight: 100;
+      }
+      .weather-icon {
+        display: inline;
+        position: relative;
+        top: 30px;
+      }
+      .description {
+        font-size: 25px;
+        font-weight: 300;
+      }
     }
-    .weather-icon {
-      display: inline;
+    .main-temp {
+      font-size: 75px;
+      font-weight: 300;
     }
-  }
-  .range-container {
-    margin-top: 15px;
-    .temp-min {
-      display: inline;
-      padding-right: 20px;
+    .range-container {
+      margin-top: 25px;
+      font-size: 30px;
+      font-weight: 300;
+      padding-bottom: 75px;
+      .temp-min {
+        display: inline;
+        padding-right: 50px;
+      }
+      .temp-max {
+        display: inline;
+      }
     }
-    .temp-max {
-      display: inline;
+    .zip-label {
+      margin-top: 75px;
+      margin-right: 152px;
+      padding-bottom: 5px;
+      font-size: 20px;
+      font-weight: 400;
     }
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+    #zipcode {
+      border-radius: 4px;
+      border: 2px solid#A9A9A9;
+      height: 40px;
+      width: 140px;
+      margin-right: 20px;
+      margin-left: 125px;
+      padding-left: 15px;
+      font-size: 18px;
+      font-weight: 100;
+    }
+    .update-btn {
+      height: 45px;
+      width: 185px;
+      border-radius: 9px;
+      font-size: 20px;
+      font-weight: 600;
+    }
   }
 }
