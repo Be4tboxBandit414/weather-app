@@ -2,8 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and thus the tools used to build this application were:
 
--React.js
--SCSS
+React.js and SASS
 
 
 # Notes about the Project
