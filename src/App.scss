@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 .App {
   text-align: center;
   .app-container {
@@ -17,7 +19,7 @@
         top: 30px;
       }
       .description {
-        font-size: 25px;
+        font-size: 35px;
         font-weight: 300;
       }
     }
@@ -46,6 +48,7 @@
         padding-bottom: 5px;
         font-size: 20px;
         font-weight: 400;
+        font-family: "Lato", sans-serif;
       }
       #zipcode {
         border-radius: 4px;
@@ -61,10 +64,12 @@
       .update-btn {
         height: 45px;
         width: 185px;
+        border-color: #979797;
         border-radius: 9px;
         font-size: 20px;
         font-weight: 600;
         background-color: #dcdcdc;
+        background-image: linear-gradient(#d8d8d8, #b3b3b3);
         color: #696969;
         box-shadow: inset 1px 1px 20px 0 #dcdcdc;
         text-shadow: 1px 1px 20px #dcdcdc;
