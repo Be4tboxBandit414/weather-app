@@ -17,7 +17,7 @@ function App() {
 
   const getTemp = (event) => {
     event.preventDefault()
-    let {value} = zipRef.current
+    const {value} = zipRef.current
     setLoading(true)
     
     fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${value},us&appid=709847967f5e54b97308c1b2cae4dee5`)
