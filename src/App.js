@@ -9,7 +9,8 @@ function App() {
 
   // Fetch from API on mount and store in State
   useEffect(() => {
-    fetch('https://api.openweathermap.org/data/2.5/weather?zip=10036,us&appid=709847967f5e54b97308c1b2cae4dee5')
+    const defaultZip = "10036"
+    fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${defaultZip},us&appid=709847967f5e54b97308c1b2cae4dee5`)
     .then(res => res.json())
     .then(res => {
       console.log(res)
