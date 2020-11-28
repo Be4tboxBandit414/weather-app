@@ -2,9 +2,12 @@ import {useState, useEffect, useRef} from 'react'
 import './App.scss';
 
 function App() {
+  // State for loading and data
   const [isLoading, setLoading] = useState(true);
   const [weatherData, setWeatherData] = useState()
   const zipRef = useRef(null)
+
+  // Fetch from API on mount and store in State
   useEffect(() => {
     fetch('https://api.openweathermap.org/data/2.5/weather?zip=10036,us&appid=709847967f5e54b97308c1b2cae4dee5')
     .then(res => res.json())
@@ -15,6 +18,7 @@ function App() {
     })
   }, [])
 
+  // Updates UI from Update Button and resets Zip Code Input
   const getTemp = (event) => {
     event.preventDefault()
     const {value} = zipRef.current
@@ -41,11 +45,13 @@ function App() {
     event.target.reset()
   }
 
+  // Converts received Kelvin to fahrenheit  
   const convertTemp = (kelvin) => {
     const temp = Math.round(((kelvin-273.15)*1.8)+32)
     return temp
   }
 
+  // Loading text
   if (isLoading) {
     return <h1>Loading...</h1>;
   }
