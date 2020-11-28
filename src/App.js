@@ -27,7 +27,7 @@ function App() {
       } else if (res.status === 404) {
         return Promise.reject('No City Found')
       } else {
-        return Promise.reject(`Some other error: ${res.status}` )
+        return Promise.reject(`Some other error: ${res.status}`)
       }
     })
     .then(res => {
